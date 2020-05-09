@@ -1,0 +1,17 @@
+div.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161513;
+    color: #887a77;
+    height: 15vh;
+    padding: 5vh;
+    font-size: 0.75rem;
+    @media only screen and (max-width: 968px) { 
+        flex-direction: column;
+        height: 18vh;
+        small {
+            margin: 1vh 0;
+        }
+    }
+}

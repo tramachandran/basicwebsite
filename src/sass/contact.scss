@@ -1,0 +1,95 @@
+div.contact-form {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    padding-top: 5vh;
+    background-color: #34393d;
+    justify-content: center;
+    align-items: center;
+    p {
+        color: white;
+        text-align: center;
+        font-size: 0.9rem;
+        &:first-child {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            margin-bottom: 1vh;
+        }    
+    }
+    form {
+        margin: 4vh 0;
+        div.input-data {
+            input {
+                height: 6vh;
+                margin: 1vh;
+                width: 18vw;
+                border: 1px solid whitesmoke;
+                border-radius: 2px;
+                &::placeholder {
+                    color: #887a77;
+                    padding-left: 5px;
+                    font-size: 0.65rem;
+                }
+            }
+        }
+        div.msg {
+            textArea {
+                margin: 1vh;
+                width: 57vw;
+                border-radius: 2px;
+                resize: none;
+                &::placeholder {
+                    color: #887a77;
+                    padding-left: 5px;
+                    font-size: 0.65rem;
+                }
+            }
+        }
+        div.btn {
+            text-align: center;
+            label {
+                display: inline-block;
+                color: white;
+                background-color: #ee3c00;
+                border-radius: 5vh;
+                font-size: 0.75rem;
+                text-align: center;
+                width: 10vw;
+                line-height: 6vh;
+                height: 6vh;
+                cursor: pointer;
+            }
+        }
+    }
+    @media only screen and (max-width: 968px) { 
+        height: 85vh;
+        p {
+            font-size: 1rem;
+            &:first-child {
+                font-size: 1.25rem;
+                text-transform: capitalize;
+            }
+        }
+        form {
+            margin: 3vh 2vh;
+            div.input-data {
+                input {
+                    width: 92vw;
+                    margin: 0.5vh;
+                }
+            }
+            div.msg {
+                textArea {
+                    margin: 0.5vh;
+                    width: 92vw;
+                }
+            }
+            div.btn {
+                margin: 0.5vh;
+                label {
+                    width: 25vw;
+                }
+            }
+        }
+    }
+}

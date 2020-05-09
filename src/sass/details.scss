@@ -6,7 +6,7 @@ div.details {
     padding: 2.5rem;
     div {
         width: 50%;
-        line-height: 1.2rem;
+        line-height: 1.4rem;
         p {
             font-size: 0.75rem;
             &:first-child {
@@ -31,6 +31,7 @@ div.details {
         height: 100vh;
         div {
             width: 100%;
+            line-height: 1.2rem;
             p {
                 font-size: 0.75rem;         
             }
