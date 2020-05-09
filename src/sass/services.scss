@@ -19,16 +19,17 @@ div#services {
         div {
             border: 1px solid gray;
             margin: 0.2rem;
-            padding: 2rem;
+            padding: 2vw;
             text-align: center;
             width: 15vw;
             i {
                 display: block;
+                color: #ee3c00;
             }
         }
     }
     @media only screen and (max-width: 768px) {
-        background: url("../images/Axelerant-Fueling-Success-Mobile.jpg") round;
+        background: url("../images/Axelerant-Fueling-Success-Mobile.jpg") contain;
         height: 100vh;
         div.label {
             font-size: 1.2rem;
@@ -41,7 +42,7 @@ div#services {
                 height: 10vh;
                 text-align: left;
                 width: 100%;
-                padding: 1rem;
+                padding: 5vw;
                 i {
                     display: inline;
                     margin-right: 1rem;

@@ -21,7 +21,7 @@ div.contact-form {
         div.input-data {
             input {
                 height: 6vh;
-                margin: 1vh;
+                margin: 1vw;
                 width: 18vw;
                 border: 1px solid whitesmoke;
                 border-radius: 2px;
@@ -34,8 +34,8 @@ div.contact-form {
         }
         div.msg {
             textArea {
-                margin: 1vh;
-                width: 57vw;
+                margin: 1vw;
+                width: 59vw;
                 border-radius: 2px;
                 resize: none;
                 &::placeholder {
@@ -61,10 +61,11 @@ div.contact-form {
             }
         }
     }
-    @media only screen and (max-width: 968px) { 
+    @media only screen and (max-width: 768px) { 
         height: 85vh;
         p {
             font-size: 1rem;
+            padding: 1vw;
             &:first-child {
                 font-size: 1.25rem;
                 text-transform: capitalize;
