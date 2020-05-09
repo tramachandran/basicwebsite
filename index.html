@@ -12,7 +12,7 @@
             <header>
                 <input type="checkbox" id="check" />
                 <label for="check" class="checkbtn">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars" aria-label="menu" aria-hidden="false"></i>
                 </label>
                 <label class="logo">
                     Axelerant
@@ -120,9 +120,9 @@
             <p>Company has helped agencies keep their promises to clients since 2005.</p>
             <form>
                 <div class="input-data">
-                    <input type="text" placeholder="Fullname"/>
-                    <input type="email" placeholder="Email Address"/>
-                    <input type="tel" placeholder="Phone Number"/>
+                    <input type="text" aria-label="Full Name" placeholder="Fullname"/>
+                    <input type="email" aria-label="Email Address" placeholder="Email Address"/>
+                    <input type="tel" aria-label="Telephone number" placeholder="Phone Number"/>
                 </div>
                 <div class="msg">
                     <textarea rows="6" placeholder="Message in brief"></textarea>
@@ -135,10 +135,14 @@
         <div class="footer">
                 <small>&copy; 2017 Company. All Rights Reserved.</small>
                 <small>Follow us on:
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-instagram"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-envelope"></i>
+                    <!-- Need to fix: Social network icons are not loading 
+                        from font-awesome
+                        added dummy icons instead.
+                    -->
+                    <a target="_blank" href="https://facebook.com"><i class="fa fa-tshirt" aria-label="facebook" aria-hidden="false"></i></a>
+                    <a target="_blank" href="https://instagram.com"><i class="fa fa-file-video" aria-label="instagram" aria-hidden="false"></i></a>
+                    <a target="_blank" href="https://twitter.com"><i class="fa fa-hamsa" aria-label="twitter" aria-hidden="false"></i></a>
+                    <a href="mailto:tramachandran1@email.com"><i class="fa fa-envelope" aria-label="mail" aria-hidden="false"></i></a>
                 </small>
         </div>
     </div>
