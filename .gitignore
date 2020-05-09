@@ -1,0 +1,14 @@
+# dependencies
+/node_modules
+
+# production
+/build
+
+#development
+/dist
+
+#cache
+/.cache
+
+
+npm-debug.log*

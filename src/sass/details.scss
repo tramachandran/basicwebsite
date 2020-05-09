@@ -1,0 +1,45 @@
+div.details {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 70vh;
+    padding: 2.5rem;
+    div {
+        width: 50%;
+        line-height: 1.2rem;
+        p {
+            font-size: 0.75rem;
+            &:first-child {
+                font-size: 1.2rem;
+                color: #494441;
+                margin-bottom: 4vh;
+            }
+            &:last-child {
+                color: #605f5b;
+            }
+        }
+        &.world-image {
+            background-image: url("../images/world-map-for-desktop.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+    }
+    @media only screen and (max-width: 968px) {
+        padding: 1rem;
+        flex-direction: column;
+        height: 100vh;
+        div {
+            width: 100%;
+            p {
+                font-size: 0.75rem;         
+            }
+            &:first-child {
+                margin-bottom: 5vh;
+            }
+            &.world-image { 
+                height: 100%;
+            }   
+        }
+    }
+}

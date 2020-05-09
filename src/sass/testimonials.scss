@@ -1,0 +1,97 @@
+div.testimonials {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    h3 {
+        text-align: center;
+        width: 100%;
+        margin: 4vh 0 3vh;
+        height: 3vh;
+    }
+    div.user-comments {
+        display: inline-flex;
+        margin: auto;
+        div.comment {
+            margin: 2vh;
+            p {
+                font-size: 0.75rem;
+                position: relative;
+                padding: 5vh;
+                border-radius: 15px;
+                background-color: white;
+                color: #817370;
+                width: 30vw;
+                box-shadow: gray;
+                margin-bottom: 3vh;
+                box-shadow: 2px 2px 6px;
+                line-height: 1.25rem;
+                &::before {
+                    content: open-quote;
+                    position: absolute;
+                    font-size: 2rem;
+                    color: #ee3c00;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5vh;
+                    left: 4vw;
+                    border: 1rem solid transparent;
+                    border-top: 1rem solid white;
+                    transform: rotate(-16deg);
+                }
+            }
+            div.user {
+                display: flex;
+                flex-direction: row;
+                .user-icon {
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    padding: 1vh;
+                    text-align: center;
+                    margin-right: 1vw;
+                    i {
+                        background: #bfb1b0;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        padding: 1.2vh;
+                    }
+                }
+                .user-data {
+                    div {
+                        font-size: 0.75rem;
+                        text-transform: uppercase;
+                        &:last-child {
+                            font-size: 0.75rem;
+                            color: #958784;
+                            text-transform: none;
+                        }
+                    }
+                }
+            }
+        }          
+    }
+    @media only screen and (max-width: 968px) { 
+        height: 60vh;
+        div.user-comments {
+            div.comment {
+                margin: 1vh;
+                display: none;
+                &:first-child {
+                    display: block;
+                }
+                p {
+                    width: 85vw;
+                    padding: 2vh;
+                    line-height: 1.5rem;
+                    &::after {
+                        bottom: -5vh;
+                        left: 10vw;
+                    }
+               }
+            }
+        }
+    }
+}

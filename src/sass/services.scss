@@ -1,0 +1,53 @@
+div#services {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-image: url("../images/Axelerant-Fueling-Success.jpg");
+    color: white;
+    div.label {
+        font-size: 1.5rem;
+        width: 50%;
+        text-align: center;
+        margin: 3vh 0;
+    }
+    div.services {
+        display: flex;
+        flex-flow: row wrap;        
+        div {
+            border: 1px solid gray;
+            margin: 0.2rem;
+            padding: 2rem;
+            text-align: center;
+            width: 15vw;
+            i {
+                display: block;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        background: url("../images/Axelerant-Fueling-Success-Mobile.jpg") round;
+        height: 100vh;
+        div.label {
+            font-size: 1.2rem;
+            width: 90%;
+        }
+        div.services {
+            flex-flow: column wrap;
+            width: 90%;
+            div {
+                height: 10vh;
+                text-align: left;
+                width: 100%;
+                padding: 1rem;
+                i {
+                    display: inline;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,118 @@
+div.header {
+    header {
+        height: 10vh;
+        background-color: #212121;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        z-index: 99;
+        .checkbtn {
+            display: none;
+            font-size: 1rem;
+            color: white;
+            line-height: 10vh;
+            margin-left: 0.25rem;
+            cursor: pointer;
+        }
+        #check {
+            display: none;
+        }
+        label.logo {
+            color: #ee3c00;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 3rem;
+            line-height: 10vh;
+            }
+        .nav {
+            margin-left: 30vw;
+            ul {
+                line-height: 10vh;
+                li {
+                    margin: 0 0.5rem;
+                    display: inline-block;
+                    a{
+                        color:#b0a5a3;
+                        font-size: 0.8rem;
+                        padding: 5px;
+                        &.active {
+                            color: white;
+                        }
+                        &:hover {
+                            background-color: cornsilk;
+                            border-radius: 5vh;
+                            color: #ee3c00
+                        }
+                    }
+                }
+            }   
+        }
+        label#button {
+            line-height: 5vh;
+            height: 5vh;
+            margin: 2.5vh;
+            color: white;
+            background-color: #ee3c00;
+            border-radius: 5vh;
+            font-size: 0.65rem;
+            text-align: center;
+            letter-spacing: 2px;
+            width: 12vw;
+            cursor: pointer;
+            &:hover {
+                font-weight: bold;
+            }
+            &::after {
+                content: 'Get In Touch'
+            }
+        }
+        @media only screen and (max-width: 968px) {
+            label.logo {
+                margin: 0 15vw;
+            }
+            .checkbtn {
+                display: block;
+            }
+            .nav {
+                margin-left: 0;
+                ul {
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: #2c3850;
+                    top: 10vh;
+                    left: -100%;
+                    text-align: center;
+                    transition: left 500ms;
+                    li {
+                        display: block;
+                        a {
+                            font-size: 0.85rem;
+                            &:hover,&:active {
+                                background: none;
+                                color: #b0a5a3;
+                            }
+                        }
+                    }
+                }
+            }
+            #check:checked {
+                ~ nav {
+                    ul {
+                    left: 0;
+                    }
+                }
+            }
+            label#button {
+                width: 1vw;
+                background: none;
+                cursor: pointer;
+                font-size: 1rem;  
+                &::after {
+                    content: ''
+                }
+            }
+        }
+    }
+}
